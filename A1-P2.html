@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birdwatching</title>
+
+  <!-- Importing Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General setup */
+    html, body {
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+    }
+
+    html {
+      font-size: 10px; /* Set base font size */
+      background-color: #00ff00; /* Set background color to bright green */
+    }
+
+    body {
+      width: 70%; /* Set the width of the body */
+      min-width: 800px; /* Minimum width to prevent it from getting too small */
+      margin: 0 auto; /* Center the body content */
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Cinzel Decorative', cursive; /* Font for headings */
+      color: #2a2a2a; /* Color for headings */
+    }
+
+    p, input, li {
+      font-family: 'Roboto Condensed', sans-serif; /* Font for paragraphs and list items */
+      color: #2a2a2a; /* Color for text */
+    }
+
+    /* Styling for the main title (h1) */
+    h1 {
+      font-size: 4rem; /* Large font size for main title */
+      text-align: center; /* Center the title */
+      text-shadow: 2px 2px 10px black; /* Add shadow for depth */
+      color: #1b3b1b; /* Darker green color for the title */
+      margin-top: 50px; /* Space above the title */
+    }
+
+    /* Styling for subheadings (h2) */
+    h2 {
+      font-size: 3rem; /* Medium font size for subheadings */
+      text-align: center; /* Center the subheading */
+    }
+
+    h3 {
+      font-size: 2.2rem; /* Smaller font size for h3 */
+    }
+
+    /* Styling for paragraphs and list items */
+    p, li {
+      font-size: 1.6rem; /* Font size for paragraphs and list items */
+      line-height: 1.5; /* Line height for readability */
+    }
+
+    /* Header layout */
+    header {
+      margin-bottom: 10px; /* Space below the header */
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Center header content */
+      align-items: center; /* Align items vertically */
+      background-color: #00cc00; /* Background color for header */
+      padding: 20px; /* Padding around header content */
+    }
+
+    /* Styling for the logo image in the header */
+    header img {
+      height: 60px; /* Fixed height for the logo */
+      margin-left: 20px; /* Space to the left of the logo */
+    }
+
+    /* Navigation bar styles */
+    nav {
+      display: flex; /* Use flexbox for layout */
+      justify-content: center; /* Center nav items */
+      background-color: #00cc00; /* Background color for nav */
+      padding: 10px 0; /* Padding above and below the nav */
+    }
+
+    nav ul {
+      padding: 0; /* Remove padding from the list */
+      list-style-type: none; /* Remove bullets from list items */
+      display: flex; /* Use flexbox for list items */
+      justify-content: space-around; /* Space items evenly */
+      width: 60%; /* Set width for the nav list */
+    }
+
+    nav li {
+      display: inline; /* Display list items inline */
+    }
+
+    /* Styling for nav links */
+    nav a {
+      font-size: 2rem; /* Font size for links */
+      text-transform: uppercase; /* Uppercase text */
+      text-decoration: none; /* Remove underline from links */
+      color: #000; /* Text color for links */
+      padding: 10px 20px; /* Padding inside links */
+      background-color: #00e600; /* Background color for links */
+      border-radius: 5px; /* Rounded corners for links */
+      transition: background-color 0.3s ease; /* Smooth background change on hover */
+    }
+
+    /* Hover effect for nav links */
+    nav a:hover {
+      background-color: #009900; /* Darker green on hover */
+    }
+
+    /* Main layout */
+    main {
+      display: flex; /* Use flexbox for main layout */
+      justify-content: space-between; /* Space out content */
+      margin-top: 20px; /* Space above the main content */
+    }
+
+    /* Article styles */
+    article {
+      flex: 3; /* Takes up 3/4 of the main area */
+      padding: 20px; /* Padding inside article */
+      background-color: #33cc33; /* Light green background for article */
+      color: #000; /* Text color in the article */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Sidebar styles */
+    aside {
+      flex: 1; /* Takes up 1/4 of the main area */
+      background-color: #33cc33; /* Light green background for sidebar */
+      margin-left: 20px; /* Space to the left of the sidebar */
+      padding: 20px; /* Padding inside sidebar */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    aside h2 {
+      text-align: center; /* Center sidebar heading */
+    }
+
+    /* 2x2 Photo Grid styles */
+    .photo-grid {
+      display: grid; /* Use grid layout */
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 10px; /* Space between photos */
+    }
+
+    .photo-grid img {
+      width: 100%; /* Full width of the column */
+      height: auto; /* Maintain aspect ratio */
+      border: 2px solid #fff; /* White border around photos */
+      border-radius: 10px; /* Rounded corners for photos */
+    }
+
+    /* Footer layout */
+    footer {
+      text-align: center; /* Center footer text */
+      padding: 20px; /* Padding inside footer */
+      margin-top: 20px; /* Space above footer */
+      background-color: #00cc00; /* Background color for footer */
+      font-size: 1.4rem; /* Font size for footer text */
+    }
+
+    /* Styling for links in the footer */
+    footer a {
+      color: #0000ee; /* Default link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    footer a:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with centered title and logo -->
+  <header>
+    <h1>Birdwatching</h1> <!-- Main title of the website -->
+    <img src="C:\Users\dhruv\Downloads\assets\assets\dove.png" alt="Bird Logo"> <!-- Logo image, replace with actual path -->
+  </header>
+
+  <!-- Navigation bar -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li> <!-- Home link -->
+      <li><a href="#">Get Started</a></li> <!-- Link to start page -->
+      <li><a href="#">Photos</a></li> <!-- Link to photo gallery -->
+      <li><a href="#">Gear</a></li> <!-- Link to gear recommendations -->
+      <li><a href="#">Forum</a></li> <!-- Link to forum -->
+    </ul>
+  </nav>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Welcome Text Section -->
+    <article>
+      <h2>Welcome</h2> <!-- Welcome heading -->
+      <p>
+        Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.
+      </p>
+      <p>
+        So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!
+      </p>
+    </article>
+
+    <!-- Sidebar with 2x2 Photo Grid -->
+    <aside>
+      <h2>Favourite Photos</h2> <!-- Heading for favorite photos -->
+      <div class="photo-grid">
+        <img src="C:\Users\dhruv\Downloads\assets\assets\favorite-1.jpg" alt="Small black bird"> <!-- Photo 1 -->
+        <img src="C:\Users\dhruv\Downloads\assets\assets\favorite-2.jpg" alt="Bright blue bird"> <!-- Photo 2 -->
+        <img src="C:\Users\dhruv\Downloads\assets\assets\favorite-3.jpg" alt="Large white bird"> <!-- Photo 3 -->
+        <img src="C:\Users\dhruv\Downloads\assets\assets\favorite-4.jpg" alt="White and black bird"> <!-- Photo 4 -->
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
+    <p><a href="#">Dove icon</a> by Lorc.</p> <!-- Attribution for the icon -->
+  </footer>
+
+</body>
+</html>
