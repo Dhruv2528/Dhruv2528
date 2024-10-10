@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Semi-transparent overlay */
+        url('C:\Users\dhruv\Downloads\a2-part1-images\pattern.png'); /* Replace with your pattern image URL */
+    background-size: cover; /* Cover the entire background */
+    color: #fff; /* White text for contrast */
+    margin: 0; /* Remove default margin */
+}
+
+/* Header styling */
+header {
+    display: flex; /* Flexbox for header layout */
+    justify-content: space-between; /* Space between header elements */
+    align-items: center; /* Align items vertically */
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text in header */
+    padding: 10px 20px; /* Padding for header */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Logo styling */
+.mozilla-logo {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Intro section styling */
+.intro {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    padding: 0px; /* Padding around intro section */
+}
+
+.intro .video {
+    flex: 1; /* Video takes 1 part of the flex space */
+    margin-right: 20px; /* Space between video and text */
+}
+
+.intro .text {
+    flex: 2; /* Text takes 2 parts of the flex space */
+}
+
+.intro h2 {
+    color: #000000; /* Orange color for the title */
+}
+
+/* Gallery section styling */
+.gallery {
+    background-color: rgba(217, 83, 79, 0.8); /* Slightly transparent red background */
+    padding: 20px; /* Padding around gallery section */
+    text-align: center; /* Center the images */
+}
+
+.gallery .row {
+    display: flex; /* Flexbox for gallery */
+    justify-content: center; /* Center the logos */
+    align-items: center; /* Align logos vertically in the center */
+}
+
+/* Logo styling */
+.row a img {
+    width: 120px; /* Set uniform width for logos */
+    height: 120px; /* Set uniform height for logos */
+    margin: 0 10px; /* Add margin between logos */
+    object-fit: contain; /* Ensure logos are scaled properly */
+}
+
+/* Red Panda section styling */
+.red-panda {
+    padding: 0px; /* Padding for the red panda section */
+    text-align: center; /* Center the panda image and text */
+    background-color: #333(67, 62, 62); /* Slightly transparent white background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column; /* Stack intro elements on smaller screens */
+        align-items: center; /* Center the items */
+    }
+    
+    .intro .video, .intro .text {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .gallery .row {
+        flex-direction: column; /* Stack gallery images on smaller screens */
+    }
+}

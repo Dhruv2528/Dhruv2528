@@ -1,0 +1,80 @@
+<!-- 
+    Name: Dhruv Mistry
+    File: A2-P1.html
+    Date: 09 October 2024
+    Description: A webpage about Mozilla featuring a video, logos, and images with responsive features.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla - Rocking the Free Web</title>
+    <link rel="stylesheet" href="Style1.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Mozilla</h1>
+        <!-- Mozilla logo image -->
+        <img src="C:\Users\dhruv\Downloads\a2-part1-images\firefox-logo120.png" alt="Mozilla Logo" class="mozilla-logo">
+    </header>
+
+    <!-- Intro Section with Video and Description -->
+    <section class="intro">
+        <div class="video">
+            <!-- Embedded YouTube video about Mozilla -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=2nK90n4ixd56xAy4" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen></iframe>
+        </div>
+        <!-- Text content explaining Mozilla's mission -->
+        <div class="text">
+            <h2>Rocking the Free Web</h2>
+            <p>
+                Mozilla is a global community of technologists, thinkers, and builders, working together to keep the Internet open and accessible. 
+                They believe in the power of collaboration and human connection on an open platform, essential for personal and collective growth. 
+                Click the images below to learn more about Mozilla's initiatives. Red panda image by Mathias Appel.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Logos -->
+    <section class="gallery">
+        <div class="row">
+            <!-- Link to Firefox download with a logo -->
+            <a href="https://www.mozilla.org/en-US/firefox/new/" title="Download Firefox">
+                <img src="C:\Users\dhruv\Downloads\a2-part1-images\firefox-logo120.png" alt="Firefox Logo" 
+                     srcset="C:\Users\dhruv\Downloads\a2-part1-images\OIP.jpeg" sizes="(max-width: 100px) 100px, 100px">
+            </a>
+            <!-- Link to Mozilla Dinosaur page with a logo -->
+            <a href="https://www.mozilla.org/en-US/" title="Mozilla Dinosaur">
+                <img src="C:\Users\dhruv\Downloads\a2-part1-images\mozilla-dinosaur120.png" alt="Dinosaur Logo" 
+                     srcset="C:\Users\dhruv\Downloads\a2-part1-images\mozilla-dinosaur400.png" sizes="(max-width: 100px) 100px, 100px">
+            </a>
+            <!-- Link to Firefox Add-ons with a logo -->
+            <a href="https://addons.mozilla.org/" title="Firefox Add-ons">
+                <img src="C:\Users\dhruv\Downloads\a2-part1-images\firefox-addons120.jpg" alt="Add-ons Logo" 
+                     srcset="C:\Users\dhruv\Downloads\a2-part1-images\firefox-addons400.jpg" sizes="(max-width: 100px) 100px, 100px">
+            </a>
+            <!-- Link to MDN Web Docs with a logo -->
+            <a href="https://developer.mozilla.org/en-US/" title="MDN Logo">
+                <img src="C:\Users\dhruv\Downloads\a2-part1-images\mdn-logo-dino-head.png" alt="MDN Logo" 
+                     srcset="C:\Users\dhruv\Downloads\a2-part1-images\mdn-logo-dino-head.png" sizes="(max-width: 100px) 100px, 100px">
+            </a>
+        </div>
+    </section>
+
+    <!-- Red Panda Section with Responsive Image -->
+    <section class="red-panda">
+        <!-- Picture element to handle responsive red panda images -->
+        <picture>
+            <source media="(max-width: 600px)" srcset="C:\Users\dhruv\Downloads\a2-part1-images\red-panda-portrait-small.jpg">
+            <img src="C:\Users\dhruv\Downloads\a2-part1-images\red-panda-landscape.jpg" alt="Red Panda">
+        </picture>
+        <!-- Attribution for the red panda image -->
+        <p>Red panda picture by Mathias Appel.</p>
+    </section>
+</body>
+</html>
