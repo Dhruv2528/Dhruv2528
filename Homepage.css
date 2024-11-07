@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Fonts */
+@font-face {
+    font-family: 'CustomBodyFont';
+    src: url('fonts/CustomBodyFont.woff2') format('woff2'),
+         url('fonts/CustomBodyFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomHeadingFont';
+    src: url('fonts/CustomHeadingFont.woff2') format('woff2'),
+         url('fonts/CustomHeadingFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Styles */
+html {
+    font-family: 'CustomBodyFont', Arial, sans-serif;
+    font-size: 16px; /* Site-wide font size */
+}
+
+body {
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+/* Header Section */
+header {
+    border-bottom: 3px solid #2E3A87;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'CustomHeadingFont', sans-serif;
+    font-size: 2rem;
+    color: #2E3A87;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Sticky Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #2E3A87;
+    font-weight: bold;
+    outline: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+/* Introduction Section */
+.introduction p:first-of-type {
+    text-indent: 2em; /* Indent the first paragraph */
+}
+
+.introduction p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+/* Contact Information Section */
+.contact-info h2 {
+    font-family: 'CustomHeadingFont', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Link Styling */
+.contact-info a {
+    color: #E74C3C;
+    text-decoration: underline;
+    outline: none;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+    text-decoration: none;
+}
+
+.contact-info a:visited {
+    color: #A73D3A;
+}
+
+.contact-info a[target="_blank"]:after {
+    content: " 🔗";
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Two-Column Layout for Article and Aside */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for Images in Articles */
+.article-image {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 100%;
+}
+
+/* Grid Layout for Photos with a 1px Gap */
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1px;
+}
+
+.photos-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Additional Margins */
+.margin-small {
+    margin: 0.5em;
+}
+
+.margin-medium {
+    margin: 1em;
+}
+
+.margin-large {
+    margin: 2em;
+}
