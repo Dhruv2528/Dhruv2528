@@ -1,0 +1,38 @@
+<!--
+Name: DhruvKumar Mistry (100961571)
+File: SSGenerator.html
+Date: 17 November 2024
+Description: A simple webpage for generating a random silly story based on user input and temperature format selection.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly Story Generator</title>
+    <link rel="stylesheet" href="Sstyle.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <h1>Silly Story Generator</h1>
+    <form>
+        <!-- Input field for the user to enter a custom name -->
+        <label for="customName">Enter custom name:</label>
+        <input type="text" id="customName" placeholder="e.g., Bob">
+        <br><br>
+        <!-- Radio buttons to select the temperature format -->
+        <label>
+            <input type="radio" name="temperature" value="us" checked> US
+        </label>
+        <label>
+            <input type="radio" name="temperature" value="uk"> UK
+        </label>
+    </form>
+    <br>
+    <!-- Button to generate the random story -->
+    <button id="generate">Generate random story</button>
+    <!-- Story output area -->
+    <p id="story" style="background-color: orange; padding: 10px; display: none;"></p>
+    <script src="SSGenerator.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

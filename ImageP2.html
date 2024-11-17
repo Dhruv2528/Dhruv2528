@@ -1,0 +1,54 @@
+<!--
+Name: DhruvKumar Mistry (100961571)
+File: SSGenerator.html
+Date: 17 November 2024
+Description: A dynamic image gallery webpage that allows users to toggle image modes and view images using thumbnails.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    Meta Information 
+    Specifies the character encoding for the document and ensures responsive design 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Image Gallery Example</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="ImagePart2.css">
+</head>
+<body>
+    <!-- Main heading of the webpage -->
+    <h1>Image Gallery Example</h1>
+
+    <!-- Gallery Container -->
+    <div id="gallery">
+
+        <!-- Main Image Section -->
+        <div id="main-image-container">
+            <!-- Displays the main image that will change based on user interaction -->
+            <img id="main-image" src="images/image1.jpg" alt="Main image">
+            
+            <!-- Button to toggle between dark and light modes -->
+            <button id="darken">Darken</button>
+        </div>
+
+        <!-- Thumbnails Section -->
+        <div id="thumbnails">
+            <!-- Thumbnail images with absolute paths (should be updated to relative paths for portability) -->
+            <img src="C:\Users\dhruv\OneDrive\Desktop\DC Sem-2\Web Devlopment & Fundamentals\ImagePart2\1105630.jpg" alt="Thumbnail 1" class="thumbnail">
+            <img src="C:\Users\dhruv\OneDrive\Desktop\DC Sem-2\Web Devlopment & Fundamentals\ImagePart2\2119966.jpg" alt="Thumbnail 2" class="thumbnail">
+            <img src="C:\Users\dhruv\OneDrive\Desktop\DC Sem-2\Web Devlopment & Fundamentals\ImagePart2\4058058.jpg" alt="Thumbnail 3" class="thumbnail">
+            <img src="C:\Users\dhruv\OneDrive\Desktop\DC Sem-2\Web Devlopment & Fundamentals\ImagePart2\4058090.jpg" alt="Thumbnail 4" class="thumbnail">
+            <img src="C:\Users\dhruv\OneDrive\Desktop\DC Sem-2\Web Devlopment & Fundamentals\ImagePart2\4058105.jpg" alt="Thumbnail 5" class="thumbnail">
+        </div>
+    </div>
+
+    <!-- JavaScript file link for adding interactivity -->
+    <script src="ImageP2.js"></script>
+</body>
+</html>
